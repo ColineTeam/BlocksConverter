@@ -1,4 +1,4 @@
-# BlocksConverter
+# ButtonsConverter
 PMMP plugin that convert blocks Java Edition world to Bedrock Edition.
 
 ## How to use?

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Frago9876543210\BlocksConverter;
+namespace Frago9876543210\ButtonsConverter;
 
 
 use pocketmine\command\Command;
@@ -20,8 +20,11 @@ class Main extends PluginBase implements Blocks{
 						for($y = 0; $y < 16; $y++){
 							for($z = 0; $z < 16; $z++){
 								$id = $subChunk->getBlockId($x, $y, $z);
-								if(in_array($id, array_keys(self::IDS))){
-									$subChunk->setBlock($x, $y, $z, self::IDS[$id], $subChunk->getBlockData($x, $y, $z));
+								$array = $subChunk->getBlockDataArray($x, $y, $z);
+								var_dump($array);
+								break 5;
+								if(in_array($id, self::IDS)){
+//									$subChunk->setBlock($x, $y, $z, self::IDS[$id], $subChunk->getBlockData($x, $y, $z));
 								}
 							}
 						}

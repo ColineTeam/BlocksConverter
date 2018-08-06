@@ -1,12 +1,12 @@
-name: BlocksConverter
-main: Frago9876543210\BlocksConverter\Main
+name: ButtonsConverter
+main: Frago9876543210\ButtonsConverter\Main
 version: 1.0
 api: [3.0.0-ALPHA10, 3.0.0-ALPHA11]
 author: Frago9876543210
 
 commands:
  bs:
-  description: "BlocksConverter command"
+  description: "ButtonsConverter command"
   permission: bs
 permissions:
  bs:
